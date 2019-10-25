@@ -1,0 +1,19 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a [routerLink]="['/theme']">Theme</a></li>
+                    <li><a [routerLink]="['/']" class="nav-link">Home</a></li>
+                    <li><a [routerLink]="['/pizza']" class="nav-link">Pizza</a></li>
+                    <li><a [routerLink]="['/basket']" class="nav-link">Basket</a></li>
+                </ul>
+            </nav>
+            <div class="credits ml-auto">
+                <span class="copyright">
+                    © {{test | date: 'yyyy'}} Ian Collington
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>

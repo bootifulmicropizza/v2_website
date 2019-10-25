@@ -1,0 +1,58 @@
+<div class="wrapper">
+    <div class="page-header section-dark" style="background-image: url('assets/img/pizza.jpg')">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                    <h1 class="presentation-title">Bootiful micro pizza</h1>
+                    <div class="fog-low">
+                        <img src="assets/img/fog-low.png" alt="">
+                    </div>
+                    <div class="fog-low right">
+                        <img src="assets/img/fog-low.png" alt="">
+                    </div>
+                </div>
+
+                <h2 class="presentation-subtitle text-center">fresh from the cloud</h2>
+            </div>
+        </div>
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+        <h6 class=" category-absolute ml-auto mr-auto">Developed by <a href="https://ian.collington.me" target="_blank">Ian Collington</a></h6>
+    </div>
+    <div class="main">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tim-title">
+                            <h3>Can I order some pizza please?</h3>
+                            <br/>
+                            <p>
+                                No, sorry. Bootiful Micro Pizza is a fictitious website built by <a href="https://ian.collington.me">Ian Collington</a> to learn about 
+                                microservices and cloud technologies.
+                            </p>
+                            <br/>
+                            <p>
+                                This website is built using Angular and it is backed by a number of microservices built using Spring Boot/Cloud. 
+                                It is hosted on AWS in an EKS cluster using Fargate with Istio for the service mesh. Jenkins is also hosted in the EKS cluster to provide a 
+                                CI/CD environment that deploys straight to production.
+                            </p>
+                            <br/>
+                            <p>
+                                The full source code can be found on <a href="https://github.com/bootifulmicropizza">GitHub</a>.
+                            </p>
+                            <br/>
+                            <p>
+                                Whilst you cannot actually order and receive any pizza, this site is otherwise fully functional (or at least will be!) so please go order some pizza!
+                            </p>
+                            <br/>
+                            <div class="col text-center" routerLinkActive="active">
+                                <a [routerLink]="['/pizza']"><button type="button" class="btn btn-outline btn-round">Order pizza</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

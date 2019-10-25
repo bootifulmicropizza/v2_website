@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
+    <div class="container">
+        <a class="navbar-brand" href="https://www.bootifulmicropizza.com">Bootiful Micro Pizza</a>
+        <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-menu-icon">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a [routerLink]="['/']" class="nav-link"><i class="nc-icon nc-compass-05"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/pizza']" class="nav-link"><i class="nc-icon nc-shop"></i> Pizza</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/basket']" class="nav-link"><i class="nc-icon nc-basket"></i> Basket</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/login']" class="nav-link"><i class="nc-icon nc-single-02"></i> Login</a>
+                </li>
+                <li class="nav-item ">
+                    <div ngbDropdown class="dropdown" placement="bottom-left">
+                    <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-single-02" aria-hidden="true"></i> Ian</a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-danger dropdown-menu-right">
+                            <a [routerLink]="['/myprofile']" class="dropdown-item">My Profile</a>
+                            <a [routerLink]="['/orderhistory']" class="dropdown-item">Order History</a>
+                            <div class="dropdown-divider"></div>
+                            <a [routerLink]="['/logout']" class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
